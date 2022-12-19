@@ -107,7 +107,6 @@ const server = http.createServer((req, res) => {
    
 });
 
-
 server.listen(PORT, () => {
     emitterObj.emit('log', `Web Server is running on port : ${PORT}`, REQUEST_LOG);
 });
