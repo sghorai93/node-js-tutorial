@@ -5,7 +5,7 @@ const fs = require('fs');
 const fsPromises = require('fs').promises;
 const path = require('path');
 
-const logEvents = async (message) => {
+const logEvents = async (message, logName) => {
     const dateTimeFormat = `${format(new Date(), 'dd-MM-yyyy  HH:mm:ss')}`;
     const logItem = `${dateTimeFormat} - ${uuid()} - ${message}\n`;
 
@@ -14,7 +14,7 @@ const logEvents = async (message) => {
             await fsPromises.mkdir(path.join(__dirname, 'logs'));
         }
 
-        await fsPromises.appendFile(path.join(__dirname, 'logs', 'EventLogger.txt'), logItem);
+        await fsPromises.appendFile(path.join(__dirname, 'logs', logName), logItem);
         console.log(message);
     } catch (err) {
         console.error(err);
@@ -23,7 +23,7 @@ const logEvents = async (message) => {
 };
 
 const localhostAccessLog = async (request) => {
-    const message = `${request.method} -- ${request.url} -- ${request.statusCode}`;
+    const message = `${request.method} -- ${request.url}`;
     const dateTimeFormat = `${format(new Date(), 'dd-MM-yyyy  HH:mm:ss')}`;
     const logItem = `${dateTimeFormat} - ${message}\n`;
 
