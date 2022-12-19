@@ -8,7 +8,7 @@
     "dev": "nodemon index"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sandip",
   "license": "ISC",
   "dependencies": {
     "date-fns": "^2.29.3",
