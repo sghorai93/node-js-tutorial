@@ -1,10 +1,1 @@
-[
-  {
-    "username": "root",
-    "password": "$2b$10$4VfPQ68OLmKyq5HWSwY0jOZStFEi4TE8HxwCqEOUZrQ7L29W6wOZW"
-  },
-  {
-    "username": "root2",
-    "password": "$2b$10$FULsKSNYIVDLOhyvCxbRKemLPZRJc/Qpin2EE.h4UP1oDpibm5nni"
-  }
-]
+[{"username":"root2","password":"$2b$10$FULsKSNYIVDLOhyvCxbRKemLPZRJc/Qpin2EE.h4UP1oDpibm5nni"},{"username":"root","password":"$2b$10$4VfPQ68OLmKyq5HWSwY0jOZStFEi4TE8HxwCqEOUZrQ7L29W6wOZW","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpYXQiOjE2NzE2MTE3MzUsImV4cCI6MTY3MTY5ODEzNX0.v0HN1OQePlrGtFOKSgtBdAvWkzikRAU0wdXvs-ZVsxY"}]

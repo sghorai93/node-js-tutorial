@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const { logger } = require('./middleware/logEvents');
-const errorHandler = require('./middleware/errorHandler');
+const { errorHandler } = require('./middleware/errorHandler');
 const cors = require('cors');
 const corsOption = require('./config/corsOption');
 

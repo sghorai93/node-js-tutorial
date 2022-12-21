@@ -8,4 +8,9 @@ const errorHandler = (err, req, res, next) => {
     res.status(500).send(err.message);
 };
 
-module.exports = errorHandler;
+const logError = (err) => {
+    console.error(err);
+    logEvents(`${err.name} : ${err.message} : ${err.stack}`, ERROR_LOG);
+};
+
+module.exports = { errorHandler, logError };
